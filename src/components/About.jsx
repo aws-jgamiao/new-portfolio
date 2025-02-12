@@ -47,17 +47,26 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a software engineer passionate about building modern, secure applications with Nuxt.js, TypeScript, and React. I specialize in full-stack development, system migrations, and audit-focused solutions. I've built eCommerce platforms, financial apps, and mobile experiences, always focusing on efficiency and user experience. I love solving complex problems and transforming legacy systems into cutting-edge solutions.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
+      </div>
+
+      {/* Centered Resume Button */}
+      <div className="mt-16 flex justify-center">
+        <motion.a
+          href="/Joshua Gamiao - Resume.pdf"
+          download="Joshua_Gamiao_Resume.pdf"
+          className="inline-block px-6 py-3 text-lg font-semibold text-white bg-[#915EFF] rounded-lg shadow-md hover:bg-[#7347CC] transition-all duration-300"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Download Resume
+        </motion.a>
       </div>
     </>
   );

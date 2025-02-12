@@ -24,11 +24,17 @@ import threejs from "./tech/threejs.svg";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
+import aws from "./company/aws.png";
+import rikai from "./company/rikai.png";
+import narnoo from "./company/narnoo.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import weatherapp from "./weatherapp.png";
+import financetracker from "./financetracker.png";
 
 export {
   logo,
@@ -55,8 +61,13 @@ export {
   meta,
   shopify,
   starbucks,
+  aws,
+  narnoo,
+  rikai,
   tesla,
   carrent,
   jobit,
+  weatherapp,
+  financetracker,
   tripguide,
 };

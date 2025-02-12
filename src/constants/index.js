@@ -15,14 +15,15 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  aws,
+  rikai,
   carrent,
   jobit,
+  financetracker,
+  weatherapp,
   tripguide,
   threejs,
+  narnoo,
 } from "../assets";
 
 export const navLinks = [
@@ -50,11 +51,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Software Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Research & Development Engineer",
     icon: creator,
   },
 ];
@@ -116,57 +117,42 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Associate Research & Development Engineer",
+    company_name: "Advanced World Solutions, Inc.",
+    icon: aws,
+    iconBg: "#e3d5d3",
+    date: "Nov 2022 - Nov 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed, developed, and maintained web applications using React.js and Node.js.",
+      "Worked closely with cross-functional teams, including Japanese developers, QA engineers, and fellow developers, to deliver high-quality products.",
+      "Ensured responsive design implementation and seamless cross-browser compatibility.",
+      "Conducted code reviews, offering valuable feedback to enhance code quality and performance.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Front-end Developer",
+    company_name: "Narnoo",
+    icon: narnoo,
+    iconBg: "#e3d5d3",
+    date: "April 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and maintained an e-commerce web application using Nuxt.js and Node.js.",
+      "Collaborated with an Australian-based developer, engaging in regular discussions to refine and improve the web application.",
+      "Focused on responsive design principles and ensured compatibility across different browsers.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Software Developer",
+    company_name: "Rikai Pty Ltd",
+    icon: rikai,
+    iconBg: "#e3d5d3",
+    date: "June 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained a web application using Vue.js and GraphQL.",
+      "Partnered with an Australian-based software developer, engaging in productive meetings to ensure a high-quality application.",
+      "Implemented responsive design strategies and guaranteed a seamless user experience across various browsers.",
     ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  }, 
 ];
 
 const testimonials = [
@@ -198,16 +184,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Finance Tracker",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web application that helps users track their income, expenses, and savings. It provides budgeting tools, financial insights, and visual reports",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
@@ -215,50 +201,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: financetracker,
+    source_code_link: "https://aws-jgamiao.github.io/finance-tracker/",
   },
   {
-    name: "Job IT",
+    name: "Weather App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that provides real-time weather updates, forecasts, and climate conditions for any location. Users can search for weather details by city",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: weatherapp,
+    source_code_link: "https://aws-jgamiao.github.io/weather-app/",
   },
 ];
 
