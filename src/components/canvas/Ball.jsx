@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import {
   Decal,
   Float,
@@ -12,12 +12,21 @@ import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+  const ballRef = useRef();
+  const [startTime] = useState(() => Date.now()); // Store start time
+
+  useFrame(() => {
+    const elapsed = (Date.now() - startTime) / 1000; // Convert to seconds
+    if (elapsed < 4) {
+      ballRef.current.rotation.y = elapsed * 2 * Math.PI * 0.25; // 1 full rotation in 4 seconds
+    }
+  });
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
+      <mesh ref={ballRef} castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color='#fff8eb'
@@ -40,7 +49,7 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      frameloop='demand'
+      frameloop="always" // Ensure continuous rendering for smooth animation
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
