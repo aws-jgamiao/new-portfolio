@@ -35,6 +35,7 @@ import tripguide from "./tripguide.png";
 
 import weatherapp from "./weatherapp.png";
 import financetracker from "./financetracker.png";
+import minitwitter from "./minitwitter.png";
 
 export {
   logo,
@@ -69,5 +70,6 @@ export {
   jobit,
   weatherapp,
   financetracker,
+  minitwitter,
   tripguide,
 };

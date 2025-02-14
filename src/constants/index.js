@@ -21,6 +21,7 @@ import {
   jobit,
   financetracker,
   weatherapp,
+  minitwitter,
   tripguide,
   threejs,
   narnoo,
@@ -225,6 +226,28 @@ const projects = [
     image: weatherapp,
     source_code_link: "https://aws-jgamiao.github.io/weather-app/",
   },
+  {
+    "name": "Mini Twitter",
+    "description": 
+      "A simplified version of Twitter that allows users to post tweets, like, and interact with others. It delivers a lightweight and fast social media experience.",
+    "tags": [
+      {
+        "name": "react",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "typescript",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "tailwind",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image": minitwitter,
+    "source_code_link": "https://aws-jgamiao.github.io/mini-twitter-demo/"
+}
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };
